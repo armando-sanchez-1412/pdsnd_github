@@ -1,3 +1,10 @@
+"""
+File: bikeshare.py
+Description: This program makes an analysis of the data related to bike share systems for thre major cities in the United States—Chicago, New York City, and Washington.
+Author: Armando Sanchez
+Credits: Udacity Programming for Data Science Nanodegree Program
+"""
+
 import time
 import pandas as pd
 import numpy as np
@@ -201,7 +208,7 @@ def user_stats(df,city):
             print("Sorry, there was an error calculating user stats: {}".format(e))
 
 def show_raw_data(df):
-    """Displays raw lines of raw data if the user accepts"""
+    """Displays raw lines of data. The user is asked to enter yes or no options to continue displaying the next 5 lines of raw data"""
 
     try:
         start_index = 0
