@@ -208,7 +208,7 @@ def user_stats(df,city):
             print("Sorry, there was an error calculating user stats: {}".format(e))
 
 def show_raw_data(df):
-    """Displays raw lines of data. The user is asked to enter yes or no options to continue displaying the next 5 lines of raw data"""
+    """Displays raw lines of data. The user is asked to enter yes or no options to continue displaying the next 5 lines of raw data."""
 
     try:
         start_index = 0
