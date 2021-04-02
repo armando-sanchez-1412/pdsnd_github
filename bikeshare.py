@@ -215,16 +215,16 @@ def show_raw_data(df):
         end_index = 5
         message = "Would you like to see the first 5 lines of raw data? Please enter a number:"
         while True:
-            raw = input("\n{}\n1. Yes\n2. No\n".format(message)).strip()
-            if raw == "1":
+            raw_data = input("\n{}\n1. Yes\n2. No\n".format(message)).strip()
+            if raw_data == "1":
                 print(df.iloc[start_index:end_index])
                 start_index = end_index
                 end_index += 5
                 message = "Would you like to see the next 5 lines of raw data? Please enter a number:"
-            elif raw == "2":
+            elif raw_data == "2":
                 break
             else:
-                print("\nPlease enter a valid value\n")
+                print("Sorry, '{}' is not a valid option".format(raw_data))
     except Exception as e:
             print("Sorry, there was an error processing your request: {}".format(e))
 
