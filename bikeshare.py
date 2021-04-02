@@ -217,7 +217,7 @@ def show_raw_data(df):
             elif raw_data == "2":
                 break
             else:
-                print("\nPlease enter a valid value\n")
+                print("Sorry, '{}' is not a valid option".format(raw_data))
     except Exception as e:
             print("Sorry, there was an error processing your request: {}".format(e))
 
